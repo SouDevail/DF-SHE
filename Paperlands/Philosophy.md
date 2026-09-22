@@ -3,9 +3,13 @@
 I do not want to build AI by simply giving it more.
 
 🕐More parameters.?
+
 🕐More hardware..?
+
 🕑More money...?
+
 🕝More computation....?
+
 🕰️ = ⛓️💸⛓️
 
 ---
