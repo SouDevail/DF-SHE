@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900" preserveAspectRatio="xMidYMid meet">
+<defs>
+<style>
+.title{font-family:"Rajdhani","Arial Narrow",sans-serif;font-size:64px;font-weight:700;letter-spacing:5.5px;fill:#F1F3F5}
+.subtitle{font-family:"IBM Plex Sans","Segoe UI",sans-serif;font-size:27px;letter-spacing:1.6px;fill:#AEB7BE}
+.final-label{font-family:"IBM Plex Sans","Segoe UI",sans-serif;font-size:32px;letter-spacing:1.8px;fill:#AEB7BE}
+.section{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:34px;font-weight:800;letter-spacing:3.2px;fill:#F3F4F5}
+.metric{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:46px;font-weight:700;fill:#FFB347}
+.metric-large{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:60px;font-weight:700;fill:#FFB347}
+.metric-small{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:20px;font-weight:600;fill:#C5CDD3}
+.metric-small-large{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:26px;font-weight:700;fill:#C5CDD3}
+.k-label{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:30px;font-weight:700;fill:#FFB347;letter-spacing:1px}
+.node-label{font-family:"IBM Plex Mono","Courier New",monospace;font-size:21px;font-weight:600;fill:#BFC7CC}
+.active-label{font-family:"Space Mono","IBM Plex Mono",monospace;font-size:22px;font-weight:700;letter-spacing:1.6px;fill:#101417}
+.nano-label{font-family:"Barlow Condensed","Arial Narrow",sans-serif;font-size:25px;font-weight:800;letter-spacing:1.6px;fill:#E8FFF0}
+.line{fill:none;stroke:#59636A;stroke-width:3.4}
+.flow{fill:none;stroke:#FFB347;stroke-width:5;stroke-dasharray:16 14;animation:flow 1.6s linear infinite}
+.green-flow{fill:none;stroke:#71E6A1;stroke-width:5;stroke-dasharray:15 13;animation:flow 1.3s linear infinite}
+.node{fill:#59636A}
+.node-active{fill:#FFB347;filter:url(#amberGlow)}
+.nano{fill:#465149;stroke:#66736A;stroke-width:2.6}
+.nano-active{fill:#71E6A1;stroke:#B7FFD0;stroke-width:3.4;filter:url(#greenGlow)}
+.idle{animation:idle 3s ease-in-out infinite}
+.active{animation:active 2s ease-in-out infinite}
+.pulse{animation:pulse 2.2s ease-in-out infinite}
+@keyframes flow{from{stroke-dashoffset:60}to{stroke-dashoffset:0}}
+@keyframes idle{0%,100%{opacity:.28}50%{opacity:.5}}
+@keyframes active{0%,100%{opacity:.55}50%{opacity:1}}
+@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+</style>
+
+<filter id="amberGlow" x="-100%" y="-100%" width="300%" height="300%">
+<feGaussianBlur stdDeviation="7.5" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<filter id="greenGlow" x="-100%" y="-100%" width="300%" height="300%">
+<feGaussianBlur stdDeviation="7.5" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#111517"/>
+<stop offset=".5" stop-color="#202629"/>
+<stop offset="1" stop-color="#111719"/>
+</linearGradient>
+
+<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#293135" stop-opacity=".9"/>
+<stop offset="1" stop-color="#171D20" stop-opacity=".9"/>
+</linearGradient>
+</defs>
+
+<rect width="1400" height="900" fill="url(#bg)"/>
+
+<rect x="10" y="6" width="1380" height="888" rx="36" fill="url(#panel)" stroke="#3D464B" stroke-width="2.6"/>
+
+<text x="700" y="56" text-anchor="middle" class="title">
+SPARSE ROUTING FIELD
+</text>
+
+<text x="700" y="92" text-anchor="middle" class="subtitle">
+A single forward pass routes a sparse subset
+</text>
+
+<text x="56" y="136" class="section">
+MACRO ROUTING
+</text>
+
+<text x="56" y="192" text-anchor="start" class="metric-large">
+1000
+</text>
+
+<text x="240" y="188" text-anchor="start" class="metric-small-large">
+MACRO-EXPERT SLOTS
+</text>
+
+<text x="56" y="222" class="subtitle">
+candidate expert population
+</text>
+
+<g class="idle">
+<circle cx="64"  cy="256" r="9" class="node"/>
+<circle cx="92"  cy="256" r="9" class="node"/>
+<circle cx="120" cy="256" r="9" class="node"/>
+<circle cx="148" cy="256" r="9" class="node"/>
+<circle cx="176" cy="256" r="9" class="node"/>
+<circle cx="204" cy="256" r="9" class="node"/>
+<circle cx="232" cy="256" r="9" class="node"/>
+<circle cx="260" cy="256" r="9" class="node"/>
+<circle cx="288" cy="256" r="9" class="node"/>
+<circle cx="316" cy="256" r="9" class="node"/>
+<circle cx="344" cy="256" r="9" class="node"/>
+<circle cx="372" cy="256" r="9" class="node"/>
+<circle cx="400" cy="256" r="9" class="node"/>
+<circle cx="428" cy="256" r="9" class="node"/>
+<circle cx="456" cy="256" r="9" class="node"/>
+<circle cx="484" cy="256" r="9" class="node"/>
+<circle cx="512" cy="256" r="9" class="node"/>
+<circle cx="540" cy="256" r="9" class="node"/>
+<circle cx="568" cy="256" r="9" class="node"/>
+<circle cx="596" cy="256" r="9" class="node"/>
+<circle cx="624" cy="256" r="9" class="node"/>
+<circle cx="652" cy="256" r="9" class="node"/>
+<circle cx="680" cy="256" r="9" class="node"/>
+<circle cx="708" cy="256" r="9" class="node"/>
+<circle cx="736" cy="256" r="9" class="node"/>
+<circle cx="764" cy="256" r="9" class="node"/>
+<circle cx="792" cy="256" r="9" class="node"/>
+<circle cx="820" cy="256" r="9" class="node"/>
+<circle cx="848" cy="256" r="9" class="node"/>
+<circle cx="876" cy="256" r="9" class="node"/>
+<circle cx="904" cy="256" r="9" class="node"/>
+<circle cx="932" cy="256" r="9" class="node"/>
+<circle cx="960" cy="256" r="9" class="node"/>
+<circle cx="988" cy="256" r="9" class="node"/>
+<circle cx="1016" cy="256" r="9" class="node"/>
+<circle cx="1044" cy="256" r="9" class="node"/>
+<circle cx="1072" cy="256" r="9" class="node"/>
+<circle cx="1100" cy="256" r="9" class="node"/>
+<circle cx="1128" cy="256" r="9" class="node"/>
+<circle cx="1156" cy="256" r="9" class="node"/>
+<circle cx="1184" cy="256" r="9" class="node"/>
+<circle cx="1212" cy="256" r="9" class="node"/>
+<circle cx="1240" cy="256" r="9" class="node"/>
+<circle cx="1268" cy="256" r="9" class="node"/>
+<circle cx="1296" cy="256" r="9" class="node"/>
+<circle cx="1324" cy="256" r="9" class="node"/>
+<circle cx="1352" cy="256" r="9" class="node"/>
+</g>
+
+<g class="active">
+<circle cx="252" cy="256" r="13" class="node-active"/>
+<circle cx="372" cy="256" r="13" class="node-active"/>
+<circle cx="484" cy="256" r="13" class="node-active"/>
+<circle cx="596" cy="256" r="13" class="node-active"/>
+<circle cx="708" cy="256" r="13" class="node-active"/>
+<circle cx="820" cy="256" r="13" class="node-active"/>
+<circle cx="932" cy="256" r="13" class="node-active"/>
+<circle cx="1044" cy="256" r="13" class="node-active"/>
+<circle cx="1156" cy="256" r="13" class="node-active"/>
+<circle cx="1268" cy="256" r="13" class="node-active"/>
+</g>
+
+<path d="M700 272 L700 288" class="flow"/>
+
+<rect x="470" y="296" width="460" height="140" rx="30" fill="#252D30" stroke="#FFB347" stroke-width="3.4"/>
+
+<text x="700" y="344" text-anchor="middle" class="section">
+TOP-K SELECTION
+</text>
+
+<text x="700" y="400" text-anchor="middle" class="k-label">
+k = 50 / 1000
+</text>
+
+<path d="M700 436 L700 458" class="flow"/>
+
+<text x="700" y="492" text-anchor="middle" class="metric">
+50 SELECTED
+</text>
+
+<text x="700" y="522" text-anchor="middle" class="subtitle">
+selected macro-experts receive routed signals
+</text>
+
+<g>
+<circle cx="340" cy="556" r="16" class="node-active"/>
+<circle cx="402" cy="556" r="16" class="node-active"/>
+<circle cx="464" cy="556" r="16" class="node-active"/>
+<circle cx="526" cy="556" r="16" class="node-active"/>
+<circle cx="588" cy="556" r="16" class="node-active"/>
+<circle cx="650" cy="556" r="16" class="node-active"/>
+<circle cx="712" cy="556" r="16" class="node-active"/>
+<circle cx="774" cy="556" r="16" class="node-active"/>
+<circle cx="836" cy="556" r="16" class="node-active"/>
+<circle cx="898" cy="556" r="16" class="node-active"/>
+<circle cx="960" cy="556" r="16" class="node-active"/>
+<circle cx="1022" cy="556" r="16" class="node-active"/>
+<circle cx="1084" cy="556" r="16" class="node-active"/>
+</g>
+
+<path d="M340 574 C374 592 424 594 444 610" class="green-flow"/>
+<path d="M588 574 C588 592 600 598 615 610" class="green-flow"/>
+<path d="M836 574 C816 592 792 598 778 610" class="green-flow"/>
+<path d="M1084 574 C1050 592 1000 594 980 610" class="green-flow"/>
+
+<rect x="360" y="616" width="680" height="180" rx="32" fill="#1B2520" stroke="#71E6A1" stroke-width="3.4"/>
+
+<text x="700" y="660" text-anchor="middle" class="section">
+MICRO ROUTING
+</text>
+
+<text x="700" y="692" text-anchor="middle" class="metric-small">
+Each selected macro-expert has 5 nano operators
+</text>
+
+<g>
+<rect x="404" y="712" width="74" height="52" rx="13" class="nano"/>
+<rect x="490" y="712" width="74" height="52" rx="13" class="nano"/>
+<rect x="576" y="712" width="74" height="52" rx="13" class="nano-active"/>
+<rect x="662" y="712" width="74" height="52" rx="13" class="nano"/>
+<rect x="748" y="712" width="74" height="52" rx="13" class="nano-active"/>
+<rect x="834" y="712" width="74" height="52" rx="13" class="nano"/>
+</g>
+
+<text x="441" y="738" text-anchor="middle" dominant-baseline="central" class="node-label">MLP</text>
+<text x="527" y="738" text-anchor="middle" dominant-baseline="central" class="node-label">CNN</text>
+<text x="613" y="738" text-anchor="middle" dominant-baseline="central" class="active-label">ATTN</text>
+<text x="699" y="738" text-anchor="middle" dominant-baseline="central" class="node-label">TREE</text>
+<text x="785" y="738" text-anchor="middle" dominant-baseline="central" class="active-label">RNN</text>
+<text x="871" y="738" text-anchor="middle" dominant-baseline="central" class="node-label">+</text>
+
+<text x="700" y="838" text-anchor="middle" class="metric">
+2 / 5 ROUTED
+</text>
+
+<path d="M700 856 L700 872" class="green-flow"/>
+
+<rect x="585" y="880" width="230" height="1.5" fill="#71E6A1" opacity=".5"/>
+
+<text x="700" y="894" text-anchor="middle" class="final-label">
+sparse routing → aggregation → output
+</text>
+</svg>
