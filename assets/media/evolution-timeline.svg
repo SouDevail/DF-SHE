@@ -1,0 +1,168 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1400" height="900" viewBox="0 0 1400 900">
+<defs>
+<style>
+.title{font-family:"Creepster","Nosifer","Eater",cursive;font-size:58px;font-weight:700;letter-spacing:3px;fill:#F3F0EA}
+.subtitle{font-family:"Cinzel","Georgia",serif;font-size:22px;letter-spacing:3px;fill:#AEB7C2}
+.year{font-family:"Creepster","Nosifer","Eater",cursive;font-size:42px;fill:#F4F0E8}
+.version{font-family:"Cinzel","Georgia",serif;font-size:27px;font-weight:700;letter-spacing:1.6px;fill:#EEE9DF}
+.metric{font-family:"IBM Plex Mono","Courier New",monospace;font-size:22px;font-weight:600;fill:#C7D0D8}
+.metric-strong{font-family:"IBM Plex Mono","Courier New",monospace;font-size:34px;font-weight:800;fill:#67D8FF}
+.problem{font-family:"Cinzel","Georgia",serif;font-size:20px;letter-spacing:1.6px;fill:#B8C2CB}
+.current{font-family:"Creepster","Nosifer","Eater",cursive;font-size:37px;letter-spacing:3px;fill:#7DFFB2}
+.line{stroke:#47515B;stroke-width:3.2;fill:none}
+.progress{stroke:#7C8CFF;stroke-width:4.6;fill:none;stroke-dasharray:16 18;animation:flow 1.5s linear infinite}
+.node{fill:#272E34;stroke:#66727D;stroke-width:3.2}
+.node-active{fill:#7C8CFF;stroke:#D8DCFF;stroke-width:3.2;filter:url(#violetGlow)}
+.node-current{fill:#7DFFB2;stroke:#D8FFE7;stroke-width:3.2;filter:url(#greenGlow)}
+.card{fill:#20262B;stroke:#46515A;stroke-width:2.4}
+.card-current{fill:#202A27;stroke:#587B68;stroke-width:2.4}
+.fade{animation:fade 3s ease-in-out infinite}
+.pulse{animation:pulse 2.5s ease-in-out infinite}
+@keyframes flow{from{stroke-dashoffset:68}to{stroke-dashoffset:0}}
+@keyframes fade{0%,100%{opacity:.45}50%{opacity:.9}}
+@keyframes pulse{0%,100%{opacity:.55}50%{opacity:1}}
+</style>
+
+<filter id="violetGlow" x="-100%" y="-100%" width="300%" height="300%">
+<feGaussianBlur stdDeviation="8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<filter id="greenGlow" x="-100%" y="-100%" width="300%" height="300%">
+<feGaussianBlur stdDeviation="8" result="b"/>
+<feMerge>
+<feMergeNode in="b"/>
+<feMergeNode in="SourceGraphic"/>
+</feMerge>
+</filter>
+
+<linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+<stop offset="0" stop-color="#0D1117"/>
+<stop offset=".5" stop-color="#151B22"/>
+<stop offset="1" stop-color="#101820"/>
+</linearGradient>
+
+<linearGradient id="panel" x1="0" y1="0" x2="0" y2="1">
+<stop offset="0" stop-color="#1C242B" stop-opacity=".94"/>
+<stop offset="1" stop-color="#12181E" stop-opacity=".94"/>
+</linearGradient>
+</defs>
+
+<rect width="1400" height="900" fill="url(#bg)"/>
+
+<rect x="15" y="10" width="1370" height="880" rx="34" fill="url(#panel)" stroke="#34404A" stroke-width="2.4"/>
+
+<text x="700" y="62" text-anchor="middle" class="title">
+DF-SHE EVOLUTION
+</text>
+
+<text x="700" y="102" text-anchor="middle" class="subtitle">
+ENGINEERING ITERATIONS • VERIFIED SIMULACRUM HISTORY
+</text>
+
+<line x1="120" y1="370" x2="1280" y2="370" class="line"/>
+
+<path d="M120 370 L1280 370" class="progress"/>
+
+<circle cx="175" cy="370" r="17" class="node-active pulse"/>
+<circle cx="440" cy="370" r="17" class="node-active pulse"/>
+<circle cx="705" cy="370" r="17" class="node-active pulse"/>
+<circle cx="970" cy="370" r="17" class="node-current pulse"/>
+<circle cx="1225" cy="370" r="17" class="node-current pulse"/>
+
+<text x="175" y="288" text-anchor="middle" class="year">V1</text>
+<text x="175" y="330" text-anchor="middle" class="version">FOUNDATION</text>
+
+<rect x="45" y="415" width="260" height="250" rx="24" class="card"/>
+
+<text x="175" y="468" text-anchor="middle" class="metric-strong">959</text>
+<text x="175" y="502" text-anchor="middle" class="metric">params / micro</text>
+
+<text x="175" y="558" text-anchor="middle" class="metric-strong">1830 ms</text>
+<text x="175" y="592" text-anchor="middle" class="metric">B=64 CPU</text>
+
+<text x="175" y="642" text-anchor="middle" class="problem">BUDGET FAILURE</text>
+
+<path d="M305 370 L375 370" class="progress"/>
+
+<text x="440" y="288" text-anchor="middle" class="year">V2</text>
+<text x="440" y="330" text-anchor="middle" class="version">RESTRUCTURE</text>
+
+<rect x="310" y="415" width="260" height="250" rx="24" class="card"/>
+
+<text x="440" y="468" text-anchor="middle" class="metric-strong">239</text>
+<text x="440" y="502" text-anchor="middle" class="metric">params / micro</text>
+
+<text x="440" y="558" text-anchor="middle" class="metric-strong">8.9 ms</text>
+<text x="440" y="592" text-anchor="middle" class="metric">B=64 CPU</text>
+
+<text x="440" y="642" text-anchor="middle" class="problem">≈206× FASTER</text>
+
+<path d="M570 370 L640 370" class="progress"/>
+
+<text x="705" y="288" text-anchor="middle" class="year">V2.1</text>
+<text x="705" y="330" text-anchor="middle" class="version">HETEROGENEITY</text>
+
+<rect x="575" y="415" width="260" height="250" rx="24" class="card"/>
+
+<text x="705" y="468" text-anchor="middle" class="metric-strong">491</text>
+<text x="705" y="502" text-anchor="middle" class="metric">params / micro</text>
+
+<text x="705" y="552" text-anchor="middle" class="metric">Elman RNN</text>
+<text x="705" y="592" text-anchor="middle" class="metric">deterministic eval</text>
+
+<text x="705" y="642" text-anchor="middle" class="problem">EVALUATED</text>
+
+<path d="M835 370 L905 370" class="progress"/>
+
+<text x="970" y="288" text-anchor="middle" class="year">V2.2</text>
+<text x="970" y="330" text-anchor="middle" class="version">CANONICAL</text>
+
+<rect x="840" y="415" width="260" height="250" rx="24" class="card-current"/>
+
+<text x="970" y="468" text-anchor="middle" class="metric-strong">497</text>
+<text x="970" y="502" text-anchor="middle" class="metric">params / micro</text>
+
+<text x="970" y="552" text-anchor="middle" class="metric">504,480 total</text>
+<text x="970" y="592" text-anchor="middle" class="metric">12.4 ms • B=64</text>
+
+<text x="970" y="642" text-anchor="middle" class="current">CURRENT</text>
+
+<path d="M1100 370 L1170 370" class="progress"/>
+
+<text x="1225" y="288" text-anchor="middle" class="year">EXP-3</text>
+<text x="1225" y="330" text-anchor="middle" class="version">TRAINING</text>
+
+<rect x="1095" y="415" width="260" height="250" rx="24" class="card-current"/>
+
+<text x="1225" y="468" text-anchor="middle" class="metric-strong">0.427</text>
+<text x="1225" y="502" text-anchor="middle" class="metric">val_loss</text>
+
+<text x="1225" y="552" text-anchor="middle" class="metric">TARGET REACHED</text>
+<text x="1225" y="592" text-anchor="middle" class="metric">epoch 15 • 20.4 s</text>
+
+<text x="1225" y="642" text-anchor="middle" class="current">EXPERIMENT</text>
+
+<g class="fade">
+<circle cx="175" cy="702" r="5" fill="#7C8CFF"/>
+<circle cx="440" cy="722" r="3.2" fill="#7C8CFF"/>
+<circle cx="705" cy="694" r="5" fill="#7C8CFF"/>
+<circle cx="970" cy="722" r="3.2" fill="#7DFFB2"/>
+<circle cx="1225" cy="694" r="5" fill="#7DFFB2"/>
+</g>
+
+<text x="700" y="762" text-anchor="middle" class="subtitle">
+FROM ARCHITECTURAL FAILURE → COMPUTATIONAL RESTRUCTURE → CANONICAL SIMULACRUM
+</text>
+
+<line x1="440" y1="795" x2="960" y2="795" stroke="#39434B" stroke-width="1.6"/>
+
+<text x="700" y="832" text-anchor="middle" class="metric">NEXT: MVP</text>
+
+<text x="700" y="866" text-anchor="middle" class="subtitle">
+ST estimator • load balancing • backward validation • task selection
+</text>
+</svg>
