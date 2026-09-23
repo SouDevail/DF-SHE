@@ -1,0 +1,480 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1024 1024" width="1800" height="1800">
+<defs>
+  <linearGradient id="brain" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#0D2B33"/>
+    <stop offset="1" stop-color="#07171C"/>
+  </linearGradient>
+
+  <linearGradient id="wave" x1="0" y1="1" x2="1" y2="0">
+    <stop offset="0" stop-color="#7A4FE0"/>
+    <stop offset=".5" stop-color="#9B6FF5"/>
+    <stop offset="1" stop-color="#B794FF"/>
+  </linearGradient>
+
+  <linearGradient id="chipBody" x1="0" y1="0" x2="1" y2="1">
+    <stop offset="0" stop-color="#1B1B2E"/>
+    <stop offset="1" stop-color="#0A0A14"/>
+  </linearGradient>
+
+  <filter id="soft">
+    <feGaussianBlur stdDeviation="8"/>
+  </filter>
+
+  <filter id="glow">
+    <feGaussianBlur stdDeviation="4" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+
+  <filter id="shockGlow">
+    <feGaussianBlur stdDeviation="7" result="b"/>
+    <feMerge>
+      <feMergeNode in="b"/>
+      <feMergeNode in="b"/>
+      <feMergeNode in="SourceGraphic"/>
+    </feMerge>
+  </filter>
+</defs>
+
+<g transform="translate(512,512) scale(1.28) translate(-512,-512)">
+
+<ellipse cx="512" cy="530" rx="370" ry="330"
+         fill="#0D2B33" opacity=".14" filter="url(#soft)">
+  <animate attributeName="opacity" values=".10;.18;.10" dur="9s" repeatCount="indefinite"/>
+</ellipse>
+
+<path d="
+M485 226
+C431 190 353 210 330 267
+C282 259 244 300 253 350
+C207 374 207 441 245 470
+C214 524 245 584 299 595
+C300 655 351 693 402 681
+C431 724 489 731 523 693
+C563 726 620 710 640 668
+C701 679 748 631 739 577
+C789 548 792 484 756 451
+C780 400 751 345 704 331
+C705 274 651 233 600 249
+C570 205 516 197 485 226Z"
+fill="url(#brain)"
+stroke="#55E4D3"
+stroke-width="7"
+stroke-linejoin="round">
+  <animate attributeName="stroke-width" values="7;8;7" dur="7s" repeatCount="indefinite"/>
+</path>
+
+<path d="
+M485 226
+C431 190 353 210 330 267
+C282 259 244 300 253 350
+C207 374 207 441 245 470
+C214 524 245 584 299 595
+C300 655 351 693 402 681
+C431 724 489 731 523 693
+C563 726 620 710 640 668
+C701 679 748 631 739 577
+C789 548 792 484 756 451
+C780 400 751 345 704 331
+C705 274 651 233 600 249
+C570 205 516 197 485 226Z"
+fill="none"
+stroke="#E8E4DF"
+stroke-width="3"
+stroke-linejoin="round"
+opacity=".85"/>
+
+<g fill="none" stroke-width="10" stroke-linecap="round" opacity=".65">
+<path d="M337 318 C380 286 418 305 430 347 C440 382 411 405 376 391" stroke="#E05252">
+  <animate attributeName="stroke" values="#E05252;#FF7A7A;#E05252" dur="2.4s" repeatCount="indefinite"/>
+</path>
+<path d="M294 399 C332 369 366 391 361 431 C357 462 326 473 300 452" stroke="#E07A2A">
+  <animate attributeName="stroke" values="#E07A2A;#FFA055;#E07A2A" dur="2.6s" repeatCount="indefinite" begin=".3s"/>
+</path>
+<path d="M326 515 C372 481 416 503 415 547 C413 579 381 596 347 577" stroke="#C7B03A">
+  <animate attributeName="stroke" values="#C7B03A;#EAD65C;#C7B03A" dur="2.8s" repeatCount="indefinite" begin=".6s"/>
+</path>
+<path d="M431 259 C462 287 458 319 440 340" stroke="#5AC05A">
+  <animate attributeName="stroke" values="#5AC05A;#8CE88C;#5AC05A" dur="2.5s" repeatCount="indefinite" begin=".9s"/>
+</path>
+<path d="M478 223 C457 260 477 282 502 297" stroke="#3FBFC0">
+  <animate attributeName="stroke" values="#3FBFC0;#7AE8E8;#3FBFC0" dur="2.7s" repeatCount="indefinite" begin="1.2s"/>
+</path>
+<path d="M512 306 C474 337 481 375 515 391 C548 407 558 437 538 463" stroke="#4A7AE0">
+  <animate attributeName="stroke" values="#4A7AE0;#7AA8FF;#4A7AE0" dur="2.9s" repeatCount="indefinite" begin="1.5s"/>
+</path>
+<path d="M558 258 C526 286 539 318 570 329 C605 341 615 371 600 397" stroke="#8A5AE0">
+  <animate attributeName="stroke" values="#8A5AE0;#B48AFF;#8A5AE0" dur="3s" repeatCount="indefinite" begin="1.8s"/>
+</path>
+<path d="M646 310 C610 292 584 317 594 348 C605 379 637 389 670 373" stroke="#E052A0">
+  <animate attributeName="stroke" values="#E052A0;#FF8AC2;#E052A0" dur="2.6s" repeatCount="indefinite" begin=".4s"/>
+</path>
+<path d="M671 430 C633 407 603 427 607 460 C612 495 650 504 681 486" stroke="#E05252">
+  <animate attributeName="stroke" values="#E05252;#FF7A7A;#E05252" dur="2.5s" repeatCount="indefinite" begin=".7s"/>
+</path>
+<path d="M620 544 C582 518 548 540 551 574 C554 607 588 620 620 603" stroke="#4A7AE0">
+  <animate attributeName="stroke" values="#4A7AE0;#7AA8FF;#4A7AE0" dur="2.8s" repeatCount="indefinite" begin="1s"/>
+</path>
+<path d="M456 535 C426 505 392 519 390 552 C388 585 416 604 446 594" stroke="#5AC05A">
+  <animate attributeName="stroke" values="#5AC05A;#8CE88C;#5AC05A" dur="2.7s" repeatCount="indefinite" begin="1.3s"/>
+</path>
+</g>
+
+<g opacity=".95">
+  <g transform="translate(392,342)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-3;3;-3" dur="7s" repeatCount="indefinite"/>
+      <path d="M-16 -14 L4 -14 L4 -7 L12 -7 L12 13 L-8 13 L-8 6 L-16 6 Z"
+            fill="#0F3B3A" stroke="#E05252" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-6 -2 L2 -2 M-2 -6 L-2 2" stroke="#FFB0B0" stroke-width="1.4" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.4s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(556,300)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="3;-3;3" dur="8s" repeatCount="indefinite"/>
+      <path d="M-14 -15 L3 -15 L3 -6 L14 -6 L14 14 L-3 14 L-3 5 L-14 5 Z"
+            fill="#2A1A4A" stroke="#E07A2A" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-5 0 L5 0" stroke="#FFC98A" stroke-width="1.4" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.7s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(470,510)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-2;4;-2" dur="9s" repeatCount="indefinite"/>
+      <path d="M-15 -17 L5 -17 L5 -8 L17 -8 L17 16 L-5 16 L-5 7 L-15 7 Z"
+            fill="#0A2E2D" stroke="#C7B03A" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-3 2 L3 2 M0 -1 L0 5" stroke="#F0E08A" stroke-width="1.4" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.9s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(636,478)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="4;-2;4" dur="7.5s" repeatCount="indefinite"/>
+      <path d="M-13 -16 L4 -16 L4 -5 L16 -5 L16 15 L-4 15 L-4 4 L-13 4 Z"
+            fill="#3B2570" stroke="#5AC05A" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-6 0 L0 0 L0 6" stroke="#A8E8A8" stroke-width="1.4" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="3.1s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(540,596)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-3;3;-3" dur="8.5s" repeatCount="indefinite"/>
+      <path d="M-14 -15 L4 -15 L4 -6 L14 -6 L14 14 L-4 14 L-4 5 L-14 5 Z"
+            fill="#0B3B3A" stroke="#3FBFC0" stroke-width="1.6" stroke-linejoin="round"/>
+      <path d="M-3 0 L3 0 M0 -3 L0 3 M-3 -3 L3 3" stroke="#8AE8E8" stroke-width="1.2" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.5s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(430,410)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="2;-4;2" dur="7.2s" repeatCount="indefinite"/>
+      <path d="M-12 -13 L3 -13 L3 -5 L11 -5 L11 12 L-4 12 L-4 4 L-12 4 Z"
+            fill="#2A1A4A" stroke="#4A7AE0" stroke-width="1.5" stroke-linejoin="round"/>
+      <circle cx="0" cy="0" r="2" fill="none" stroke="#A8C8FF" stroke-width="1.2">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="0" cy="0" r=".8" fill="#A8C8FF">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.6s" repeatCount="indefinite"/>
+      </circle>
+    </g>
+  </g>
+
+  <g transform="translate(610,380)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="-4;2;-4" dur="6.8s" repeatCount="indefinite"/>
+      <path d="M-13 -12 L2 -12 L2 -4 L12 -4 L12 13 L-3 13 L-3 5 L-13 5 Z"
+            fill="#3B2570" stroke="#8A5AE0" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-4 -3 L4 -3 L4 3 L-4 3 Z" fill="none" stroke="#C8A8FF" stroke-width="1.2">
+        <animate attributeName="opacity" values="1;.3;1" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+
+  <g transform="translate(500,430)">
+    <g>
+      <animateTransform attributeName="transform" type="rotate"
+        values="3;-2;3" dur="8.2s" repeatCount="indefinite"/>
+      <path d="M-11 -12 L3 -12 L3 -5 L11 -5 L11 11 L-3 11 L-3 4 L-11 4 Z"
+            fill="#0F3B3A" stroke="#E052A0" stroke-width="1.5" stroke-linejoin="round"/>
+      <path d="M-3 0 L3 0" stroke="#FFB0D8" stroke-width="1.4" stroke-linecap="round">
+        <animate attributeName="opacity" values="1;.3;1" dur="2.3s" repeatCount="indefinite"/>
+      </path>
+    </g>
+  </g>
+</g>
+
+<g stroke="#0E0A18" stroke-width="2.5" filter="url(#glow)">
+  <g transform="translate(340,440)">
+    <rect x="-24" y="-18" width="48" height="36" rx="5" fill="url(#chipBody)" stroke="#E05252" stroke-width="2"/>
+    <g fill="#E05252">
+      <rect x="-30" y="-12" width="6" height="4" rx="1"/>
+      <rect x="-30" y="-2" width="6" height="4" rx="1"/>
+      <rect x="-30" y="8" width="6" height="4" rx="1"/>
+      <rect x="24" y="-12" width="6" height="4" rx="1"/>
+      <rect x="24" y="-2" width="6" height="4" rx="1"/>
+      <rect x="24" y="8" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#1B1B2E" stroke="#FF7A7A" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3" fill="#FF7A7A">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(590,340) rotate(15)">
+    <rect x="-22" y="-16" width="44" height="32" rx="5" fill="url(#chipBody)" stroke="#E07A2A" stroke-width="2"/>
+    <g fill="#E07A2A">
+      <rect x="-28" y="-10" width="6" height="4" rx="1"/>
+      <rect x="-28" y="0" width="6" height="4" rx="1"/>
+      <rect x="-28" y="10" width="6" height="4" rx="1"/>
+      <rect x="22" y="-10" width="6" height="4" rx="1"/>
+      <rect x="22" y="0" width="6" height="4" rx="1"/>
+      <rect x="22" y="10" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#1B1B2E" stroke="#FFA055" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2.5" fill="#FFA055">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.6s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(430,600) rotate(-10)">
+    <rect x="-26" y="-18" width="52" height="36" rx="5" fill="url(#chipBody)" stroke="#C7B03A" stroke-width="2"/>
+    <g fill="#C7B03A">
+      <rect x="-32" y="-12" width="6" height="4" rx="1"/>
+      <rect x="-32" y="-2" width="6" height="4" rx="1"/>
+      <rect x="-32" y="8" width="6" height="4" rx="1"/>
+      <rect x="26" y="-12" width="6" height="4" rx="1"/>
+      <rect x="26" y="-2" width="6" height="4" rx="1"/>
+      <rect x="26" y="8" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="6" fill="#1B1B2E" stroke="#EAD65C" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="3" fill="#EAD65C">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.8s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(660,560) rotate(8)">
+    <rect x="-22" y="-16" width="44" height="32" rx="5" fill="url(#chipBody)" stroke="#5AC05A" stroke-width="2"/>
+    <g fill="#5AC05A">
+      <rect x="-28" y="-10" width="6" height="4" rx="1"/>
+      <rect x="-28" y="0" width="6" height="4" rx="1"/>
+      <rect x="-28" y="10" width="6" height="4" rx="1"/>
+      <rect x="22" y="-10" width="6" height="4" rx="1"/>
+      <rect x="22" y="0" width="6" height="4" rx="1"/>
+      <rect x="22" y="10" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="5" fill="#1B1B2E" stroke="#8CE88C" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2.5" fill="#8CE88C">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.5s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(510,540) rotate(-6)">
+    <rect x="-20" y="-14" width="40" height="28" rx="4" fill="url(#chipBody)" stroke="#3FBFC0" stroke-width="2"/>
+    <g fill="#3FBFC0">
+      <rect x="-26" y="-8" width="6" height="4" rx="1"/>
+      <rect x="-26" y="2" width="6" height="4" rx="1"/>
+      <rect x="20" y="-8" width="6" height="4" rx="1"/>
+      <rect x="20" y="2" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="4.5" fill="#1B1B2E" stroke="#7AE8E8" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2.2" fill="#7AE8E8">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.7s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(380,300) rotate(12)">
+    <rect x="-20" y="-14" width="40" height="28" rx="4" fill="url(#chipBody)" stroke="#4A7AE0" stroke-width="2"/>
+    <g fill="#4A7AE0">
+      <rect x="-26" y="-8" width="6" height="4" rx="1"/>
+      <rect x="-26" y="2" width="6" height="4" rx="1"/>
+      <rect x="20" y="-8" width="6" height="4" rx="1"/>
+      <rect x="20" y="2" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="4.5" fill="#1B1B2E" stroke="#7AA8FF" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2.2" fill="#7AA8FF">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.9s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(560,500) rotate(-15)">
+    <rect x="-18" y="-12" width="36" height="24" rx="4" fill="url(#chipBody)" stroke="#8A5AE0" stroke-width="2"/>
+    <g fill="#8A5AE0">
+      <rect x="-24" y="-6" width="6" height="4" rx="1"/>
+      <rect x="-24" y="2" width="6" height="4" rx="1"/>
+      <rect x="18" y="-6" width="6" height="4" rx="1"/>
+      <rect x="18" y="2" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="4" fill="#1B1B2E" stroke="#B48AFF" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2" fill="#B48AFF">
+      <animate attributeName="opacity" values="1;.2;1" dur="3s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+
+  <g transform="translate(680,420) rotate(-20)">
+    <rect x="-18" y="-12" width="36" height="24" rx="4" fill="url(#chipBody)" stroke="#E052A0" stroke-width="2"/>
+    <g fill="#E052A0">
+      <rect x="-24" y="-6" width="6" height="4" rx="1"/>
+      <rect x="-24" y="2" width="6" height="4" rx="1"/>
+      <rect x="18" y="-6" width="6" height="4" rx="1"/>
+      <rect x="18" y="2" width="6" height="4" rx="1"/>
+    </g>
+    <circle cx="0" cy="0" r="4" fill="#1B1B2E" stroke="#FF8AC2" stroke-width="1.5"/>
+    <circle cx="0" cy="0" r="2" fill="#FF8AC2">
+      <animate attributeName="opacity" values="1;.2;1" dur="2.4s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</g>
+
+<path id="wavePath" d="
+M174 644
+C265 742 389 771 502 722
+C619 672 697 716 805 635
+C870 586 884 508 842 454
+C815 419 768 413 735 437
+C693 467 695 515 728 540
+C753 560 785 557 803 539"
+fill="none"
+stroke="#10101A"
+stroke-width="82"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<path d="
+M174 644
+C265 742 389 771 502 722
+C619 672 697 716 805 635
+C870 586 884 508 842 454
+C815 419 768 413 735 437
+C693 467 695 515 728 540
+C753 560 785 557 803 539"
+fill="none"
+stroke="url(#wave)"
+stroke-width="62"
+stroke-linecap="round"
+stroke-linejoin="round"/>
+
+<g transform="translate(174, 644)">
+  <path d="M-8,-10 C-2,-18 6,-16 10,-8 C14,-2 12,6 6,10 C0,14 -8,12 -12,6 C-16,0 -14,-6 -8,-10 Z"
+        fill="none" stroke="#B794FF" stroke-width="4" stroke-linejoin="round"
+        opacity=".9">
+    <animate attributeName="opacity" values=".7;1;.7" dur="4s" repeatCount="indefinite"/>
+  </path>
+</g>
+
+<g filter="url(#shockGlow)">
+  <circle r="18" fill="#FFFFFF">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#wavePath"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;1;1;1;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+  <circle r="34" fill="#D9C2FF" opacity=".55">
+    <animateMotion dur="6s" repeatCount="indefinite" rotate="auto">
+      <mpath href="#wavePath"/>
+    </animateMotion>
+    <animate attributeName="opacity" values="0;.5;.5;.5;0" dur="6s" repeatCount="indefinite"/>
+  </circle>
+</g>
+
+<g stroke="#0E0A18" stroke-width="3">
+<circle cx="254" cy="625" r="12" fill="#E05252">
+  <animate attributeName="opacity" values="1;.6;1" dur="3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="288" cy="650" r="8" fill="#E07A2A"/>
+<circle cx="332" cy="673" r="13" fill="#C7B03A"/>
+<circle cx="374" cy="682" r="7" fill="#5AC05A"/>
+<circle cx="421" cy="691" r="11" fill="#3FBFC0"/>
+<circle cx="469" cy="704" r="8" fill="#4A7AE0"/>
+<circle cx="527" cy="681" r="12" fill="#8A5AE0">
+  <animate attributeName="opacity" values="1;.6;1" dur="3.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="568" cy="674" r="7" fill="#E052A0"/>
+<circle cx="614" cy="677" r="13" fill="#E05252"/>
+<circle cx="661" cy="668" r="8" fill="#E07A2A"/>
+<circle cx="704" cy="646" r="11" fill="#C7B03A"/>
+<circle cx="751" cy="620" r="7" fill="#5AC05A"/>
+</g>
+
+<g fill="none" stroke="#D8FFF9" stroke-width="3" stroke-linecap="round">
+<path d="M248 620 l7 5 l-5 7"/>
+<path d="M326 667 l8 -3 l4 7"/>
+<path d="M416 685 l7 6 l-5 8"/>
+<path d="M560 669 l7 4 l-4 7"/>
+<path d="M607 671 l8 -4 l4 8"/>
+<path d="M697 640 l8 4 l-3 7"/>
+</g>
+
+<g fill="#55E4D3" opacity=".9">
+<circle cx="304" cy="343" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="359" cy="429" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="7s" repeatCount="indefinite"/>
+</circle>
+<circle cx="385" cy="559" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="470" cy="316" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="6.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="548" cy="350" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="7.5s" repeatCount="indefinite"/>
+</circle>
+<circle cx="625" cy="382" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="6.2s" repeatCount="indefinite"/>
+</circle>
+<circle cx="665" cy="470" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="8.3s" repeatCount="indefinite"/>
+</circle>
+<circle cx="588" cy="564" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="7.2s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<g fill="#9274F2" opacity=".9">
+<circle cx="329" cy="290" r="4">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="6.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="420" cy="382" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="7.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="518" cy="427" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -4; 0 0" dur="6.4s" repeatCount="indefinite"/>
+</circle>
+<circle cx="610" cy="319" r="5">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -5; 0 0" dur="7.8s" repeatCount="indefinite"/>
+</circle>
+<circle cx="687" cy="350" r="4">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -3; 0 0" dur="6.6s" repeatCount="indefinite"/>
+</circle>
+<circle cx="634" cy="523" r="6">
+  <animate attributeName="transform" type="translate" values="0 0; 0 -6; 0 0" dur="8.1s" repeatCount="indefinite"/>
+</circle>
+</g>
+
+<path d="M163 640 C116 589 113 526 143 478"
+      fill="none" stroke="#9B6FF5" stroke-width="10"
+      stroke-linecap="round"/>
+
+</g>
+</svg>
