@@ -1,8 +1,12 @@
 # STATUS — DF-SHE Project
 
-Last updated: 2026 (Sim/Release)
+Last updated: Jun 26|2026
 
-## Current-Simulacrum — Devailoped. MVP — In progressssss.
+*(Current: **Simulacrum** stage release)*
+
+## Current-Simulacrum — Devailoped. 
+
+**MVP — In progressssss.**
 
 ## Files
 
@@ -14,7 +18,7 @@ Last updated: 2026 (Sim/Release)
 | simulacrum-VVV.py | Archive. Mixed arch+exp. Superseded by V2.2 + exp-3. |
 | simv3exp-1.py | Archive. 3 bugs found. Historical value only. |
 | simv3exp-2.py | Done. TARGET_REACHED epoch 17. Confirmed. |
-| simv3exp-3.py | **FINAL EXP. Hybrid Adam Self-Healing. Deep refactor. GitHub target.** |
+| simv3exp-3.py | Hybrid Adam Self-Healing. Deep refactor. I'm about to review for restructuring this one. |
 
 ## Architecture state
 
