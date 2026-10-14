@@ -106,15 +106,15 @@ The goal is not to win a debate.
 
 The goal is to force better answers.
 
-[See how to create an Issue →](../../Assets/classic-github-docs/issue-creating.md)
+[See how to create an Issue →](/Assets/classic-github-docs/issue-creating.md)
 
-[See how to use Discussions →](../../Assets/classic-github-docs/github-discussions.md)
+[See how to use Discussions →](/Assets/classic-github-docs/github-discussions.md)
 
 ---
 
-### Devil's-advocate and [Questioner](../../DF-TEAM/R-TalentChoose/Brain-STORMERs/Questioner.md)
+### Devil's-advocate and [Questioner](/DF-TEAM/R-TalentChoose/Brain-STORMERs/Questioner.md)
 
-[Questioner](../../DF-TEAM/R-TalentChoose/Brain-STORMERs/Questioner.md) asks:
+[Questioner](/DF-TEAM/R-TalentChoose/Brain-STORMERs/Questioner.md) asks:
 
 **"Why is it like this?"**
 
@@ -130,11 +130,11 @@ They create different types of pressure for DF-SHE.
 
 ---
 
-### Devil's-advocate and [Angel's-advocate](../../DF-TEAM/R-TalentChoose/Brain-STORMERs/Stress-Breakers/Angel's-advocate.md)
+### Devil's-advocate and [Angel's-advocate](/DF-TEAM/R-TalentChoose/Brain-STORMERs/Stress-Breakers/Angel's-advocate.md)
 
 Devil's-advocate attempts to break the argument.
 
-[Angel's-advocate](../../DF-TEAM/R-TalentChoose/Brain-STORMERs/Stress-Breakers/Angel's-advocate.md) attempts to understand and defend the argument.
+[Angel's-advocate](/DF-TEAM/R-TalentChoose/Brain-STORMERs/Stress-Breakers/Angel's-advocate.md) attempts to understand and defend the argument.
 
 One searches for weaknesses.
 
